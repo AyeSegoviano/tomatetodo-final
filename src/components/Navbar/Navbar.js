@@ -1,4 +1,3 @@
-import './Navbar';
 import CartWidget from '../CartWidget/CartWidget';
 
 const Navbar = () => {
@@ -12,10 +11,9 @@ const Navbar = () => {
                             </div>
                             <div className="ul-container">
                                 <ul className="list">
-                                    <button className="btn">Categoría 1</button>
-                                    <button className="btn">Categoría 2</button>
-                                    <button className="btn">Categoría 3</button>
-                                    <button className="btn">Categoría 4</button>
+                                    <button className="btn-nav">Tragos con Vodka</button>
+                                    <button className="btn-nav">Tragos con Gin</button>
+                                    <button className="btn-nav">Tragos con Ron</button>
                                     <CartWidget />
                                 </ul>
                             </div>

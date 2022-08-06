@@ -1,23 +1,29 @@
 import './App.css';
 import Navbar from './components/Navbar/Navbar';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
-import Counter from './components/Counter/Counter'
+import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Footer from './components/Footer/Footer';
 
 function App() {
 
-  const handleOnAdd = (quantity) => {
-    console.log(`La cantidad agregada es de ${quantity} unidades`)
-  }
 
   return (
     <div className="App">
       
+        <BrowserRouter> 
+           <Navbar />
 
-        <Navbar />
-        <ItemListContainer />
-        <Counter stock={10} onAdd={handleOnAdd}/>
-        <Footer />
+            <Routes>
+              <Route path='/' element= {<ItemListContainer/>}/>
+              <Route path='/category/:categoryId' element= {<ItemListContainer />}/>
+              <Route path='/detail/:cocktailId' element= {<ItemDetailContainer />}/>
+              <Route path='*' element={<h1>404 NOT FOUND</h1>} /> 
+            </Routes>
+
+           <Footer />
+        </BrowserRouter>
+
 
     </div>
   );

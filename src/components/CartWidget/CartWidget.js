@@ -1,11 +1,9 @@
-import './CartWidget.css'
-
 const CartWidget = () => {
 
     return ( 
             <div className="cartContainer">
-                <img src='img/cart.svg'/>
-                <p className="seven">7</p>
+                <img src='../img/cart.svg' alt='Carrito'/>
+                <p className="cart-number">0</p>
             </div>
 
     )

@@ -15,8 +15,8 @@ body{
   padding-bottom: 20px;
 }
 
-.seven{
-  margin-top: 0px;
+.cart-number{
+  margin-top: 4px;
   margin-bottom: 0px;
   color:white;
 
@@ -43,9 +43,9 @@ h1{
 
 .list{
   display: flex;
+  flex-wrap: wrap;
   list-style: none;
   align-content: center;
-  margin-left: -40px;
 }
 
 
@@ -101,10 +101,13 @@ section{
 }
 
 .section-container{
+  align-items: center;
+  justify-content: center;
   max-width: 1000px;
   margin: 0 auto;
   margin-bottom: 40px;
   border-radius: 25px 25px 0px 0px;
+  display: flex;
 }
 
 .section-title-classic{
@@ -208,5 +211,10 @@ textarea{
   max-width: 1000px; 
   margin: 0 auto;
   justify-content: center;
+}
+
+.precio {
+  font-size: 20px;
+  font-weight: bold;
 }
 

@@ -1,8 +1,8 @@
 # Tomate Todo - Sitio Web de Coctelería
 
-_Pre-entrega del proyecto final para el curso de ReactJS de Coderhouse.
+_Pre-entrega del proyecto final para el curso de ReactJS de Coderhouse._
 
-El mismo consiste en imitar un e-commerce con diferentes productos (en este caso, cócteles) donde el usuario pueda filtrar por categoría, ver detalles de producto seleccionado y agregar artículos a un carrito de compras._
+_El mismo consiste en imitar un e-commerce con diferentes productos (en este caso, cócteles) donde el usuario pueda filtrar por categoría, ver detalles de producto seleccionado y agregar artículos a un carrito de compras._
 
 ## Instalación local 🔧
 

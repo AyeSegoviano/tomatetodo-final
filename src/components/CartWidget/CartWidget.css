@@ -1,0 +1,9 @@
+.cart-number{
+    margin-top: 4px;
+    margin-bottom: 0px;
+    color:white;
+  }
+  
+.cart-container{
+    display: flex;
+  }

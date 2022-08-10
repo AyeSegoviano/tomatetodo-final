@@ -1,4 +1,5 @@
 import Counter from '../Counter/Counter';
+import './ItemDetail.css';
 
 const handleOnAdd = (quantity) => {
     console.log(`La cantidad agregada es de ${quantity} unidades`);

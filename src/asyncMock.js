@@ -6,7 +6,7 @@ const cocktails = [
         price: 100,
         category: 'vodka',
         img: '/img/white-russian.png',
-        stock: 10,
+        stock: 25,
         description: 'Si te gusta el vodka, la crema y el licor de café, el White Russian es para vos. No te pierdas esta receta.'
     },
 
@@ -15,7 +15,7 @@ const cocktails = [
         price: 200,
         category: 'gin',
         img: '/img/negroni.png',
-        stock: 10,
+        stock: 25,
         description: 'Inventado en 1919 por el Conde Negroni al añadir a su Americano un toque de ginebra en lugar de soda.'
     },
 
@@ -24,7 +24,7 @@ const cocktails = [
         price: 300,
         category: 'whisky',
         img: '/img/old-fashioned.png',
-        stock: 10,
+        stock: 25,
         description: 'Un clásico de todos los tiempos, inventado en el siglo XIX y con fanáticos hasta el día de hoy.'
     },
 
@@ -34,7 +34,7 @@ const cocktails = [
         price: 100,
         category: 'vodka',
         img: '/img/sex-on-the-beach.png',
-        stock: 10,
+        stock: 25,
         description: 'Combina vodka y jugos de fruta. Colorido y refrescante, es un cóctel deal para preparar en verano.'
     },
 
@@ -44,7 +44,7 @@ const cocktails = [
         price: 100,
         category: 'vodka',
         img: '/img/cosmopolitan.png',
-        stock: 10,
+        stock: 25,
         description: 'De un color rojo llamativo y sabor a arándanos y cítricos, hoy en día no puede faltar en ninguna barra.'
     },
 
@@ -54,7 +54,7 @@ const cocktails = [
         price: 100,
         category: 'gin',
         img: '/img/martini.png',
-        stock: 10,
+        stock: 25,
         description: 'Sin dudas uno de los cócteles más conocidos. Elegante, estético y fácil de preparar. Servir bien frío.'
     },
 
@@ -64,7 +64,7 @@ const cocktails = [
         price: 100,
         category: 'gin',
         img: '/img/gin-tonic.png',
-        stock: 10,
+        stock: 25,
         description: 'Gin, agua tónica y mucho hielo. Pocos saben lo bien que queda con una rodaja de pepino.'
     },
 
@@ -74,7 +74,7 @@ const cocktails = [
         price: 100,
         category: 'whisky',
         img: '/img/manhattan.png',
-        stock: 10,
+        stock: 25,
         description: 'Su historia se remonta a finales del siglo XIX; cuenta la leyenda que fue creación de la madre de Winston Churchill.'
     }
 

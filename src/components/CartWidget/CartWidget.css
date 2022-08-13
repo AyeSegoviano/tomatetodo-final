@@ -6,4 +6,5 @@
   
 .cart-container{
     display: flex;
+    text-decoration: none;
   }

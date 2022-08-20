@@ -14,12 +14,9 @@ const Item = ({ id, name, img, description, price, stock }) => {
     const handleOnAdd = (quantity) => {
         setQuantityToAdd(quantity)
 
-        const productToAdd = {
-            id, name, price, quantity
-        }
-
+        const productToAdd = { id, name, price, quantity }
         addItem(productToAdd);
-    }
+        }
 
     const productQuantity = getProductQuantity(id)
    
@@ -46,7 +43,7 @@ const Item = ({ id, name, img, description, price, stock }) => {
                 quantityToAdd === 0 ? (
                     <Counter onAdd={ handleOnAdd } stock={stock} initial={productQuantity}/>
                 ) : (
-                    <Link to='/cart'>Finalizar compra</Link>
+                    <Link to='/cart' className= "btn-agregar">Finalizar compra</Link>
                     )
             }
     </div>

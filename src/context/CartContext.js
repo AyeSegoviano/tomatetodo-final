@@ -6,15 +6,15 @@ export const CartContextProvider = ({ children }) => {
     const [cart, setCart] = useState([])
     console.log(cart)
 
-    const addItem = (productToAdd) => {
-        if(!isInCart(productToAdd.id)) {
-            setCart([...cart, productToAdd])
+    const addItem = (cocktailToAdd) => {
+        if(!isInCart(cocktailToAdd.id)) {
+            setCart([...cart, cocktailToAdd])
         } else {
             const cartUpdated = cart.map(prod => {
-                if(prod.id === productToAdd.id) {
+                if(prod.id === cocktailToAdd.id) {
                     const productUpdated = {
                         ...prod,
-                        quantity: productToAdd.quantity
+                        quantity: cocktailToAdd.quantity
                     }
                     return productUpdated
                 } else {
@@ -55,8 +55,19 @@ export const CartContextProvider = ({ children }) => {
         return product?.quantity
     }
 
+    
+    const getTotal = () => {
+        let accu = 0
+
+        cart.forEach(prod => {
+            accu += prod.quantity * prod.price
+        })
+
+        return accu
+    }
+
     return (
-        <CartContext.Provider value={{ cart, addItem, getQuantity, isInCart, removeItem, clearCart, getProductQuantity }}>
+        <CartContext.Provider value={{ cart, addItem, getQuantity, isInCart, removeItem, clearCart, getProductQuantity, getTotal }}>
             {children}
         </CartContext.Provider>
     )

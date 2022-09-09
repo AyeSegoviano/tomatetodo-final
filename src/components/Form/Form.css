@@ -1,0 +1,45 @@
+.input-space, select {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .btn-agregar {
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20px;
+    padding-top: 5px;
+    padding-right: 30px;
+    padding-bottom: 5px;
+    padding-left: 30px;
+    text-decoration: none;
+    text-shadow: 0px 0px 0px #ffffff;
+    border: none;
+    background: #000000;
+    display: inline-block;
+    background-color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 25px;
+    text-decoration: none;
+  }
+  .btn-agregar:hover {
+    background: #2b2b2b;
+  }
+  
+  .div-container {
+    border-radius: 5px;
+    background-color:rgb(184, 184, 184);
+    padding: 20px;
+  }
+
+  .form-container {
+    justify-content: center;
+  }
+
+  .btn-div {
+    margin-top: 20px;
+  }

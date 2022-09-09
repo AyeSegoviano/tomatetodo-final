@@ -1,39 +1,37 @@
-import { useState, useEffect } from 'react';
-import ItemList from '../ItemList/ItemList';
-import { useParams } from 'react-router-dom';
-import { getDocs, collection, query, where } from 'firebase/firestore';
-import { database } from '../../services/firebase';
+import ItemList from "../ItemList/ItemList";
+import { useParams } from "react-router-dom";
+import { getDrinks } from "../../services/firebase/firestore";
+import { useAsync } from "../../hooks/useAsync";
 
-const ItemListContainer = ( { saludo } ) => {
+const ItemListContainer = ({ saludo }) => {
 
-    const [cocktails, setCocktails] = useState([])
+  const { categoryId } = useParams();
 
-    const { categoryId } = useParams();
+  const getDrinksFromFirestore = () => getDrinks(categoryId)
 
-    useEffect(() => {
+  const { data, error, isLoading } = useAsync(getDrinksFromFirestore, [categoryId]);
 
-        const collectionRef = !categoryId ? collection(database, 'cocktails') : query(collection(database, 'cocktails'), where('category', '==', categoryId))
+  if(isLoading) {
+    return <h1>Cargando productos...</h1>
+}
 
-        getDocs(collectionRef).then(response => {
-            console.log(response)
-            const cocktailsAdapted = response.docs.map(doc => {
-                const data = doc.data()
-                return { id: doc.id, ...data};
-            })
-            setCocktails(cocktailsAdapted)
-             }).catch(error => {
-                console.log(error)
-            });
-          }, [categoryId])
+if(error) {
+    return <h1>Hubo un error</h1>
+}
 
-    return (
-        <>
-        <h2>{saludo}</h2> 
-        <div>
-         <ItemList cocktails={cocktails}/> 
-        </div>   
-        </>
-         )
+if(data.length === 0) {
+    return categoryId ? <h1>No hay productos en la categoría {categoryId}</h1> : <h1>No hay productos disponibles</h1>
+}
+  
+  return (
+    <>
+      <h2>{saludo}</h2>
+      <div>
+        <ItemList cocktails={data} />
+      </div>
+    </>
+  );
 };
+
 
 export default ItemListContainer;

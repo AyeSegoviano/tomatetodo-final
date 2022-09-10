@@ -43,6 +43,9 @@ $ npm start
 
 https://imgur.com/a/CfIMVP7
 
+## Observaciones
+*_Si bien la funcionalidad de la página ya está establecida y no será cambiada; el maquetado en general (y en consecuencia, la estética) está sujeto a modificaciones permanentemente._
+
 ## Autora ✒️
 
 Ayelen Segoviano

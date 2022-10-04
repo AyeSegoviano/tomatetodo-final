@@ -9,7 +9,7 @@ _El mismo consiste en imitar un e-commerce con diferentes productos (en este cas
 _Clonar directorio_
 
 ```
-$ git clone https://github.com/AyeSegoviano/preentrega-coderhouse.git
+$ git clone https://github.com/AyeSegoviano/tomatetodo-final.git
 ```
 
 _Ubicarse en el directorio raíz_
